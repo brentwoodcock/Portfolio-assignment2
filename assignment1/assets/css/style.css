@@ -39,6 +39,7 @@ body {
 }
 header {
 	height: 92px;
+	width: 100%;
 	background-color: #fff;
 	margin-bottom: 38px;
 	border: solid;
@@ -57,7 +58,8 @@ h1 {
 	float: left;
 	padding: 30px 34px;
 }
-.container{
+.container,
+.container-header {
 	width: 960px;
 	margin: 0 auto;
 }
@@ -124,6 +126,7 @@ h2 {
 }
 #profile-image {
 	float: left;
+	max-width: 226px;
 	padding: 15px 26px 26px 0px;
 }
 p {
@@ -135,11 +138,13 @@ p {
 .img-holder {
 	position: relative;
 	float: left;
+	max-width: 47.5%;
 }
 .right {
 	float: right;
 }
 .project-img {
+	width: 100%;
 	margin: 25px 0;
 }
 .img-holder .link {
@@ -149,7 +154,7 @@ p {
 }
 .link {
 	padding: 20px;
-	width: 275px;
+	width: 100%;
 	background-color: #4aaaa5;
 	text-decoration: none;
 	text-align: center;
@@ -221,4 +226,84 @@ h3 {
 }
 #stackoverflow-logo {
 	float: right;
+}
+
+@media screen and (max-width: 980px) {
+
+	.container,
+	.container-header {
+		width: 730px;
+	}
+	#main-content {
+		width: 420px;
+	}
+	#profile-image {
+		max-width: 100%;
+		padding-right: 0px;
+	}
+	.img-holder {
+		max-width: 100%;
+	}
+	.nav-btns {
+		width: 37%;
+	}
+}
+
+@media screen and (max-width: 768px) {
+
+	.container,
+	.container-header {
+		width: 100%;
+		padding: 0px 20px;
+	}
+	#main-content {
+		width: 100%;
+	}
+	#profile-image {
+		max-width: 335px;
+		margin-right: 26px;
+	}
+	.img-holder {
+		max-width: 47.5%;
+	}
+	.project-img {
+		width: 100%;
+	}
+	#sidebar {
+		width: 100%;
+		margin-top: 40px;
+	}
+}
+
+@media screen and (max-width: 640px) {
+
+	.container {
+		width: 100%;
+		padding: 0px 20px;
+	}
+	.container-header {
+		padding: 0px;
+	}
+	header {
+		height: 182px;
+	}
+	.nav-btns {
+		width: 100%;
+		float: none;
+		clear: both;
+	}
+	#contact {
+		width: 33.4%;
+	}
+	h1 {
+		width: 100%;
+		clear: both;
+		text-align: center;
+	}
+	#profile-image{
+		max-width: 100%;
+	}
+	.img-holder {
+		max-width: 100%;
+	}
 }
