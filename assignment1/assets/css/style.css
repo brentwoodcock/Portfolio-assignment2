@@ -204,6 +204,7 @@ input[type=submit] {
 	border-width: 1px;
 	border-color: #ddd;
 	text-align: left;
+	overflow: auto;
 }
 h3 {
 	color: #4aaaa5;
@@ -216,6 +217,7 @@ h3 {
 #logos {
 	margin: 21px 0px 0px 0px;
 	width: 208px;
+	overflow: auto;
 }
 #github-logo {
 	float: left;
